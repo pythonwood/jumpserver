@@ -45,6 +45,7 @@ class CeleryTaskLogApi(LogTailApi):
         return task.full_log_path
 
     def is_file_finish_write(self):
+        # print('fuckdebug:', self.task.ready())
         return self.task.ready()
 
     def get_no_file_message(self, request):

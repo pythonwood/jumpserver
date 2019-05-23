@@ -11,10 +11,11 @@ from jumpserver import settings
 
 app = Celery('jumpserver')
 
-configs = {k: v for k, v in settings.__dict__.items() if k.startswith('CELERY')}
-# Using a string here means the worker will not have to
-# pickle the object when using Windows.
-# app.config_from_object('django.conf:settings', namespace='CELERY')
-app.namespace = 'CELERY'
-app.conf.update(configs)
+# configs = {k: v for k, v in settings.__dict__.items() if k.startswith('CELERY')}
+# # Using a string here means the worker will not have to
+# # pickle the object when using Windows.
+# # app.config_from_object('django.conf:settings', namespace='CELERY')
+# app.namespace = 'CELERY'
+# app.conf.update(configs)
+app.config_from_object('django.conf:settings', namespace='CELERY')
 app.autodiscover_tasks(lambda: [app_config.split('.')[0] for app_config in settings.INSTALLED_APPS])

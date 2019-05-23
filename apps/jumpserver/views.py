@@ -21,6 +21,7 @@ from orgs.utils import current_org
 
 from django.http import JsonResponse
 import json
+import requests
 @csrf_exempt
 def site_all(request):
     if request.method == 'OPTIONS':
@@ -35,6 +36,16 @@ def site_all(request):
     # response['Content-Length'] = '0'
     # response['Date'] = 'Wed, 22 May 2019 15:48:50 GMT'
     # response['Server'] = 'Microsoft-HTTPAPI/2.0'
+    return response
+
+@csrf_exempt
+def site_http_check(request, scheme, host):
+    header = {'content-type': 'application/json'}
+    data = {"hosts":["a52b250c-68b3-42bc-af11-5c3f0a4f37ab","6c601395-7785-4613-8595-0de7f4d7fde0"],"run_as":"88f3e197-3a53-4dc5-9c40-c7bd3169a84b","command":""}
+    data['command'] = 'curl -L -w "http: %{http_code}\n" -o /dev/null -s ' + scheme + '://' + host
+    r = requests.post('{}://{}/api/ops/v1/command-executions/'.format(request.scheme, request.get_host()), headers=header, data=data)
+    data = open(settings.BASE_DIR+'/ce8.com/http/qq.com.html').read() #opens the json file and saves the raw contents
+    response = HttpResponse(data)
     return response
 
 class IndexView(LoginRequiredMixin, TemplateView):

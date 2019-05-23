@@ -46,8 +46,9 @@ class LogTailApi(generics.RetrieveAPIView):
             data = f.read(self.buff_size).replace('\n', '\r\n')
 
             new_mark = str(uuid.uuid4())
-            cache.set(new_mark, f.tell(), 5)
+            cache.set(new_mark, f.tell(), 50) # debug: 设置大点， 排查半天原来在这，没问题的。
 
+            # print('fuckdebug:', data, '||', self.is_file_finish_write(), ' || ',) # debug
             if data == '' and self.is_file_finish_write():
                 self.end = True
             _data = ''
