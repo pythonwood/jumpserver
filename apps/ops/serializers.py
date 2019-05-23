@@ -82,3 +82,4 @@ class CommandExecutionSerializer(serializers.ModelSerializer):
     @staticmethod
     def get_log_url(obj):
         return reverse('api-ops:celery-task-log', kwargs={'pk': obj.id})
+

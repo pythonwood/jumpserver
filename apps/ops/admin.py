@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.db import models
 from .models import *
 
 # Register your models here.
@@ -22,10 +23,19 @@ class CommonAdmin(admin.ModelAdmin):
     # c自定义模板hange_form_template = 'change_form.html' # 自定义模板
 
 
-@admin.register(OperateLog)
-class OperateLogAdmin(CommonAdmin):
-    # list_display = [ fd.name for fd in Users._meta.fields ] + ['image_tag']
-    list_display = [field.name for field in OperateLog._meta.get_fields()]
-    def view_on_site(self, obj):
-        return f'http://home.meishichina.com/space-{obj.pk}.html'
-
+@admin.register(CommandExecution)
+class CommandExecutionAdmin(CommonAdmin):
+    list_display = [fd.name for fd in CommandExecution._meta.get_fields() if type(fd) is not models.ManyToManyField ]
+    ordering = ['-date_created']
+@admin.register(CeleryTask)
+class CeleryTaskAdmin(CommonAdmin):
+    list_display = [fd.name for fd in CeleryTask._meta.get_fields() if type(fd) is not models.ManyToManyField ]
+@admin.register(Task)
+class TaskAdmin(CommonAdmin):
+    list_display = [fd.name for fd in Task._meta.get_fields() if type(fd) is not models.ManyToManyField ]
+@admin.register(AdHoc)
+class AdHocAdmin(CommonAdmin):
+    list_display = [fd.name for fd in AdHoc._meta.get_fields() if type(fd) is not models.ManyToManyField ]
+@admin.register(AdHocRunHistory)
+class AdHocRunHistoryAdmin(CommonAdmin):
+    list_display = [fd.name for fd in AdHocRunHistory._meta.get_fields() if type(fd) is not models.ManyToManyField ]

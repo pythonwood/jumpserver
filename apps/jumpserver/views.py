@@ -19,6 +19,23 @@ from assets.models import Asset
 from terminal.models import Session
 from orgs.utils import current_org
 
+from django.http import JsonResponse
+import json
+@csrf_exempt
+def site_all(request):
+    if request.method == 'OPTIONS':
+        response = HttpResponse(content_type=None)
+    elif request.method == 'POST' or request.method == 'GET' :
+        data = open(settings.BASE_DIR+'/site_all.json').read() #opens the json file and saves the raw contents
+        jsonData = json.loads(data) #converts to a json structure
+        response = JsonResponse(jsonData)
+    response['Access-Control-Allow-Credentials'] = 'true'
+    response['Access-Control-Allow-Headers'] = 'content-type'
+    response['Access-Control-Allow-Origin'] = '*'# 'http://ce8.com:8008'
+    # response['Content-Length'] = '0'
+    # response['Date'] = 'Wed, 22 May 2019 15:48:50 GMT'
+    # response['Server'] = 'Microsoft-HTTPAPI/2.0'
+    return response
 
 class IndexView(LoginRequiredMixin, TemplateView):
     template_name = 'index.html'

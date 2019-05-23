@@ -7,8 +7,9 @@ from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
 from django.views.i18n import JavaScriptCatalog
 
-from .views import IndexView, LunaView, I18NView
+from .views import IndexView, LunaView, I18NView, site_all
 from .swagger import get_swagger_view
+from django.contrib import admin
 
 api_v1 = [
    path('users/v1/', include('users.urls.api_urls', namespace='api-users')),
@@ -57,6 +58,9 @@ api_v2_patterns = [
 ]
 
 urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('api/check/site_all', site_all),
+    path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path('', IndexView.as_view(), name='index'),
     path('', include(api_v2_patterns)),
     path('', include(api_v1_patterns)),
