@@ -379,8 +379,9 @@ REST_FRAMEWORK = {
     'DATETIME_FORMAT': '%Y-%m-%d %H:%M:%S %z',
     'DATETIME_INPUT_FORMATS': ['%Y-%m-%d %H:%M:%S %z'],
     # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 5,
+    # 不能兼容DRF的分页设置，资产树变UNDEFINED
+    # 'DEFAULT_PAGINATION_CLASS': 'REST_FRAMEWORK.PAGINATION.PAGENUMBERPAGINATION',
+    # 'PAGE_SIZE': 5,
 }
 
 AUTHENTICATION_BACKENDS = [
