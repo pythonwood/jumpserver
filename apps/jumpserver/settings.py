@@ -364,7 +364,7 @@ REST_FRAMEWORK = {
         'common.permissions.IsOrgAdmin',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        # 'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.BasicAuthentication',  # debug
         'authentication.backends.api.AccessKeyAuthentication',
         'authentication.backends.api.AccessTokenAuthentication',
         'authentication.backends.api.PrivateTokenAuthentication',

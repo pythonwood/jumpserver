@@ -20,16 +20,55 @@ from terminal.models import Session
 from orgs.utils import current_org
 
 from django.http import JsonResponse
+from celery.result import AsyncResult
+from ops.celery.utils import get_celery_task_log_path
 import json
 import requests
 @csrf_exempt
 def site_all(request):
+    response = HttpResponse()
     if request.method == 'OPTIONS':
         response = HttpResponse(content_type=None)
-    elif request.method == 'POST' or request.method == 'GET' :
+    elif request.method == 'POST': # or request.method == 'GET' :
+        task_id = json.loads(request.body)['token'] # task_id = str(request.POST.get('token'))
+        task = AsyncResult(task_id)
+        # print('task_id:', task_id, flush=True) # debug
+        if not task.ready(): return JsonResponse({"code": 0, "state": True, "runtime": None, "data":[]})
+        ansible_output = {}
+        ansi_escape = re.compile(r'\x1b[^m]*m')
+        with open(get_celery_task_log_path(task_id)) as f:
+            ip = ''
+            for l in f:
+                l = ansi_escape.sub('', l)
+                if ' | ' in l:
+                    ip = l.split(' | ')[0]
+                    ansible_output[ip] = {}
+                elif ': ' in l and ip:
+                    k,v = tuple(l.split(': '))
+                    k,v = k.strip(), v.strip()
+                    if k in ['http','dns','redirect','time_connect','time_appconnect','time_pretransfer','time_starttransfer',
+                        'size_download','speed_download','num_redirects','time_total' ]:
+                        ansible_output[ip][k] = float(v)
+                    if k in [ 'url_effective','ip']:
+                        ansible_output[ip][k] = v
+        use = ansible_output['14.1.98.227']
+        # print('debug:', use, flush=True) # debug
         data = open(settings.BASE_DIR+'/site_all.json').read() #opens the json file and saves the raw contents
         jsonData = json.loads(data) #converts to a json structure
+        nodeHK = jsonData['data'][55]
+        nodeHK['ip'] = use['ip']
+        nodeHK['url'] = json.loads(request.body)['url']
+        nodeHK['token'] = task_id
+        nodeHK['responescode'] = use['http']
+        nodeHK['dnstime'] = int(use['dns']*1000)
+        nodeHK['connecttime'] = int(use['time_connect']*1000)
+        nodeHK['firstbytetime'] = int(use['time_starttransfer']*1000)
+        nodeHK['filesize'] = round(use['size_download']/1024, 2)
+        nodeHK['speed'] = '{:0.2f}KB/s'.format(use['speed_download']/1024) # '100MB/S'
+        nodeHK['totaltime'] = int(use['time_total']*1000)
+        nodeHK['downloadtime'] = nodeHK['totaltime'] - nodeHK['firstbytetime']
         response = JsonResponse(jsonData)
+    else: return JsonResponse({"code": 0, "state": True, "runtime": None, "data":[]})
     response['Access-Control-Allow-Credentials'] = 'true'
     response['Access-Control-Allow-Headers'] = 'content-type'
     response['Access-Control-Allow-Origin'] = '*'# 'http://ce8.com:8008'
@@ -40,12 +79,15 @@ def site_all(request):
 
 @csrf_exempt
 def site_http_check(request, scheme, host):
-    header = {'content-type': 'application/json'}
+    header = {'content-type': 'application/json', }
     data = {"hosts":["a52b250c-68b3-42bc-af11-5c3f0a4f37ab","6c601395-7785-4613-8595-0de7f4d7fde0"],"run_as":"88f3e197-3a53-4dc5-9c40-c7bd3169a84b","command":""}
-    data['command'] = 'curl -L -w "http: %{http_code}\n" -o /dev/null -s ' + scheme + '://' + host
-    r = requests.post('{}://{}/api/ops/v1/command-executions/'.format(request.scheme, request.get_host()), headers=header, data=data)
+    # data['command'] = 'curl -L -w "http: %{http_code}\n" -o /dev/null -s ' + scheme + '://' + host
+    data['command'] = 'curl -sL ' + scheme + '://' + host + ' -o /dev/null -w "\n              http: %{http_code}\n                ip: %{remote_ip}\n               dns: %{time_namelookup}\n          redirect: %{time_redirect}\n      time_connect: %{time_connect}\n   time_appconnect: %{time_appconnect}\n  time_pretransfer: %{time_pretransfer}\ntime_starttransfer: %{time_starttransfer}\n     size_download: %{size_download}\n    speed_download: %{speed_download}\n                  ----------\n     num_redirects: %{num_redirects}\n     url_effective: %{url_effective}\n        time_total: %{time_total}\n\n"'
+    # r = requests.post('{}://{}/api/ops/v1/command-executions/'.format(request.scheme, request.get_host()), headers=header, data=data)
+    r = requests.post('http://127.0.0.1/api/ops/v1/command-executions/', headers=header, json=data, auth=('admin', '123qweASD')) # not data
     data = open(settings.BASE_DIR+'/ce8.com/http/qq.com.html').read() #opens the json file and saves the raw contents
-    response = HttpResponse(data)
+    response = HttpResponse(data.replace('16a191bb-7377-4d94-b78f-2ab60ed10dd3', r.json()['id']))
+    # response.set_cookie('taskid_http', r.json()['id']) # print(r.json())
     return response
 
 class IndexView(LoginRequiredMixin, TemplateView):

@@ -8,10 +8,11 @@ from ..models import CommandExecution
 from ..serializers import CommandExecutionSerializer
 from ..tasks import run_command_execution
 
+from rest_framework import permissions
 
 class CommandExecutionViewSet(viewsets.ModelViewSet):
     serializer_class = CommandExecutionSerializer
-    permission_classes = (IsValidUser,)
+    permission_classes = (permissions.IsAuthenticated,) # (IsValidUser,)
 
     def get_queryset(self):
         return CommandExecution.objects.filter(
