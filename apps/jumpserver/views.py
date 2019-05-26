@@ -24,6 +24,7 @@ from celery.result import AsyncResult
 from ops.celery.utils import get_celery_task_log_path
 import json
 import requests
+emptyjson = {"code": 0, "state": True, "runtime": None, "data":[]}
 @csrf_exempt
 def site_all(request):
     response = HttpResponse()
@@ -33,7 +34,7 @@ def site_all(request):
         task_id = json.loads(request.body)['token'] # task_id = str(request.POST.get('token'))
         task = AsyncResult(task_id)
         # print('task_id:', task_id, flush=True) # debug
-        if not task.ready(): return JsonResponse({"code": 0, "state": True, "runtime": None, "data":[]})
+        if not task.ready(): return JsonResponse(emptyjson)
         ansible_output = {}
         ansi_escape = re.compile(r'\x1b[^m]*m')
         with open(get_celery_task_log_path(task_id)) as f:
@@ -44,7 +45,7 @@ def site_all(request):
                     ip = l.split(' | ')[0]
                     ansible_output[ip] = {}
                 elif ': ' in l and ip:
-                    k,v = tuple(l.split(': '))
+                    k,v = tuple(l.split(': ')[:2])
                     k,v = k.strip(), v.strip()
                     if k in ['http','dns','redirect','time_connect','time_appconnect','time_pretransfer','time_starttransfer',
                         'size_download','speed_download','num_redirects','time_total' ]:
@@ -53,7 +54,7 @@ def site_all(request):
                         ansible_output[ip][k] = v
         use = ansible_output['14.1.98.227']
         # print('debug:', use, flush=True) # debug
-        data = open(settings.BASE_DIR+'/site_all.json').read() #opens the json file and saves the raw contents
+        data = open(settings.BASE_DIR+'/site_all.json').read()
         jsonData = json.loads(data) #converts to a json structure
         nodeHK = jsonData['data'][55]
         nodeHK['ip'] = use['ip']
@@ -68,13 +69,10 @@ def site_all(request):
         nodeHK['totaltime'] = int(use['time_total']*1000)
         nodeHK['downloadtime'] = nodeHK['totaltime'] - nodeHK['firstbytetime']
         response = JsonResponse(jsonData)
-    else: return JsonResponse({"code": 0, "state": True, "runtime": None, "data":[]})
+    else: return JsonResponse(emptyjson)
     response['Access-Control-Allow-Credentials'] = 'true'
     response['Access-Control-Allow-Headers'] = 'content-type'
     response['Access-Control-Allow-Origin'] = '*'# 'http://ce8.com:8008'
-    # response['Content-Length'] = '0'
-    # response['Date'] = 'Wed, 22 May 2019 15:48:50 GMT'
-    # response['Server'] = 'Microsoft-HTTPAPI/2.0'
     return response
 
 @csrf_exempt
@@ -88,6 +86,59 @@ def site_http_check(request, scheme, host):
     data = open(settings.BASE_DIR+'/ce8.com/http/qq.com.html').read() #opens the json file and saves the raw contents
     response = HttpResponse(data.replace('16a191bb-7377-4d94-b78f-2ab60ed10dd3', r.json()['id']))
     # response.set_cookie('taskid_http', r.json()['id']) # print(r.json())
+    return response
+
+@csrf_exempt
+def ping_check(request, host):
+    header = {'content-type': 'application/json', }
+    data = {"hosts":["a52b250c-68b3-42bc-af11-5c3f0a4f37ab","6c601395-7785-4613-8595-0de7f4d7fde0"],"run_as":"88f3e197-3a53-4dc5-9c40-c7bd3169a84b","command":""}
+    # data['command'] = 'curl -L -w "http: %{http_code}\n" -o /dev/null -s ' + scheme + '://' + host
+    data['command'] = 'ping -w 30 -c 10 -q {}'.format(host)
+    r = requests.post('http://127.0.0.1/api/ops/v1/command-executions/', headers=header, json=data, auth=('admin', '123qweASD')) # not data
+    data = open(settings.BASE_DIR+'/ce8.com/ping/qq.com.html').read() #opens the json file and saves the raw contents
+    response = HttpResponse(data.replace('16a191bb-7377-4d94-b78f-2ab60ed10dd3', r.json()['id']))
+    # response.set_cookie('taskid_http', r.json()['id']) # print(r.json())
+    return response
+
+@csrf_exempt
+def ping_all(request):
+    response = HttpResponse()
+    if request.method == 'OPTIONS':
+        response = HttpResponse(content_type=None)
+    elif request.method == 'POST': # or request.method == 'GET' :
+        task_id = json.loads(request.body)['token'] # task_id = str(request.POST.get('token'))
+        task = AsyncResult(task_id)
+        # print('task_id:', task_id, flush=True) # debug
+        if not task.ready(): return JsonResponse(emptyjson)
+        ansible_output = {}
+        ansi_escape = re.compile(r'\x1b[^m]*m')
+        with open(get_celery_task_log_path(task_id)) as f:
+            ip = ''
+            for l in f:
+                l = ansi_escape.sub('', l)
+                if ' | ' in l:
+                    ip = l.split(' | ')[0]
+                    ansible_output[ip] = {}
+                elif 'PING ' in l and ip:
+                    ansible_output[ip]['ip'] = l.split(' (')[1].split(') ')[0]
+                elif 'min/avg/max' in l and ip:
+                    # rtt min/avg/max/mdev = 51.230/52.353/53.477/1.146 ms  =>  {'min': '51.230', 'avg': '52.353', 'max': '53.477', 'mdev': '1.146'}
+                    kv = dict(zip(*tuple(kv.split('/') for kv in l.split() if '/' in kv ))) 
+                    ansible_output[ip].update(kv)
+        use = ansible_output['14.1.98.227']
+        # print('debug:', use, flush=True) # debug
+        data = open(settings.BASE_DIR+'/ping_all.json').read() #opens the json file and saves the raw contents
+        jsonData = json.loads(data) #converts to a json structure
+        nodeHK = jsonData['data'][55]
+        nodeHK['ip'] = use['ip']
+        nodeHK['url'] = json.loads(request.body)['url']
+        nodeHK['token'] = task_id
+        nodeHK['delay'] = use['avg']
+        response = JsonResponse(jsonData)
+    else: return JsonResponse(emptyjson)
+    response['Access-Control-Allow-Credentials'] = 'true'
+    response['Access-Control-Allow-Headers'] = 'content-type'
+    response['Access-Control-Allow-Origin'] = '*'# 'http://ce8.com:8008'
     return response
 
 class IndexView(LoginRequiredMixin, TemplateView):

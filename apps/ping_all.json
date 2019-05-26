@@ -1,0 +1,1915 @@
+{
+
+  "code": 0,
+
+  "state": true,
+
+  "runtime": null,
+
+  "data": [
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "5637a8dd-9d2a-46bc-b8f9-bf828cc558a0",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 4,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "5bb73c76-a6e2-4523-b6ff-bed5592f772f",
+
+      "url": "http://qq.com",
+
+      "ip": "180.163.26.39",
+
+      "location": "中国上海上海电信",
+
+      "delay": 37,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "ada54ef3-640d-4b4b-b601-c1ba28db8a28",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 24,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "c9b09a54-0ec6-4f50-8230-92915b443b62",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 13,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "5c7848cc-8f60-4599-9e81-9c3aeaba6110",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 25,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "925aaf31-18a3-466a-a907-1beadad6dcac",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 42,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "16314628-046f-47ab-a88c-b158345bdcab",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 43,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": null,
+
+      "guid": "793bb5f5-b7db-4e4d-835e-12747bba7e53",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 37,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "e622ccfd-b5e2-4e36-89e8-849eb88dd36b",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 29,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "493e987c-9d01-4f70-8e04-0726e893e3f9",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 20,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "b411719d-b833-41fd-a3cf-4c22229238ba",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 35,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "40674afe-47b2-4e4d-9b0a-203761588f50",
+
+      "url": "http://qq.com",
+
+      "ip": "180.163.26.39",
+
+      "location": "中国上海上海电信",
+
+      "delay": 26,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "02f530c4-1c65-4b62-bc27-b29ffbfa12f9",
+
+      "url": "http://qq.com",
+
+      "ip": "180.163.26.39",
+
+      "location": "中国上海上海电信",
+
+      "delay": 40,
+
+      "ttl": 49,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "c854ce8a-dd94-4aa4-9b42-2d0d854c8b97",
+
+      "url": "http://qq.com",
+
+      "ip": "180.163.26.39",
+
+      "location": "中国上海上海电信",
+
+      "delay": 46,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "646af92b-9829-406d-87b1-5dd949b00d31",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 31,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "45b16290-5c1b-4120-80e2-f901bba873d0",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 51,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "e93ab669-59e9-4e27-b361-122c3fa1bc83",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 271,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "2d27e8ee-9ebf-4d81-918f-54b8a288a723",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 42,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "ffb40d2c-8365-4d10-9640-501c0fbfb19a",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 30,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "231b7d93-23e3-47fa-8cbf-b2859cdb1708",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 22,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "adee95b2-7796-4fcc-81c8-9986e3dd008a",
+
+      "url": "http://qq.com",
+
+      "ip": "180.163.26.39",
+
+      "location": "中国上海上海电信",
+
+      "delay": 29,
+
+      "ttl": 51,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "7fe27580-8697-45f8-8272-d3f5a22a49ac",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 40,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "38d4595f-02ca-4ef9-9b53-2645a972cd4d",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 22,
+
+      "ttl": 56,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "0e8e51e9-f9bc-451b-85d1-23cadaef870a",
+
+      "url": "http://qq.com",
+
+      "ip": "180.163.26.39",
+
+      "location": "上海市|电信",
+
+      "delay": 7,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "1a9a5857-57ed-41d6-a659-d5fb529d647c",
+
+      "url": "http://qq.com",
+
+      "ip": "180.163.26.39",
+
+      "location": "中国上海上海电信",
+
+      "delay": 50,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "70108711-2d10-4664-a789-37ebfdb89005",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 56,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "2dd338e4-18bd-46ae-b82a-f6a618ae0f76",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 122,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "a63c8b62-0f3c-4baf-a13f-e3a3c3501b36",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 16,
+
+      "ttl": 47,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "b2a5019a-93df-4a84-9de0-69cadef3a3c9",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 382,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "c704fc73-d48b-4b22-9d02-a573cfeab9fd",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 39,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "29fe881c-6384-4a89-8128-e4e409f74cfc",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 7,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "83de97e4-ea97-48a1-9913-7a69afee2b40",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 244,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "fcb08b4a-1ca3-458b-baa3-3615ef8e7acf",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 21,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "cc2ad74f-de98-4957-9273-545d4b209bfc",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 28,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "d0b6e46e-bbab-4a38-94a4-05085ac48470",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 49,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "52a77c08-d0f3-413f-a28e-e27bae9aa8fd",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 37,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "f1e640a9-5d61-4c98-b8b6-61da452ee09a",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 26,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "c30f22f4-8c79-49ec-a5b9-1c6c39a31b38",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 42,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "9d990b66-9006-46ea-affe-df017fb8af83",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 29,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "849a64dc-6df0-4084-9c9b-36d69fed883c",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 40,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "d5058da7-9002-4e35-9aaf-8ec5fcf35f7c",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 6,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "c092bacf-2e7e-431a-ae6e-b954deb919c1",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 13,
+
+      "ttl": 47,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "532a2cdc-5e3f-4462-b394-3c77809b44a8",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 27,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "cc5e20c7-cb2a-4a0a-a674-0758ffa636e2",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 31,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "2a2ff271-0413-41de-96fb-100045d9adfc",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 36,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "71576040-1e94-4f74-a4f0-390765ce07b3",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 30,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "80b01275-1bcd-4527-9bd9-32877b7eb5f2",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 14,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "2ce77184-50b6-40ee-bc4d-e4f9f93f2347",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 45,
+
+      "ttl": 53,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "def803d5-63d9-4779-a1fe-d32cd652ad1b",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 10,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "d67895fe-2a18-4ed9-b6a5-b37356a731b3",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 23,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "b54be28b-88e5-49a2-9879-358f8a4eb1c5",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 19,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "25326ae6-0cca-463c-9a77-b4ce37149bff",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 33,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "390f4ac2-f0e7-4e90-954b-06c78858ac9b",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 227,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "c58a88e8-fe97-4b78-8b64-4ad794f298dc",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 29,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "8d9bc175-ba7b-4524-841c-ea836c7dfe8b",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 40,
+
+      "ttl": 50,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "fd3019eb-28f4-4a12-ab45-ab6dfaeb8602",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 41,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "99e206fd-13d1-4205-abab-2c6578c4bd34",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 53,
+
+      "ttl": 46,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "e0e41217-6f93-4f35-ac1c-4372d15e5bb1",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.48",
+
+      "location": "中国天津天津联通",
+
+      "delay": 48,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "829f9fea-c2f7-4ac2-a8fc-0deb97239950",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 19,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "a1b8c1f4-4648-48a2-830c-98b61fcddd2a",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 38,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "741864b0-aa06-4b21-bc27-ff36764bcea6",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 15,
+
+      "ttl": 52,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "9f24bf01-3887-4486-9a2e-2d70804c8f9c",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 42,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "a8895e90-3d07-493c-bbe2-36775860c1ba",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 21,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "1552de3a-2830-491e-bf61-9913992d7840",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 21,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "de10467a-da0b-4850-8201-1931d2a823c6",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 22,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "f1d26cdc-7b0d-4aee-801d-77f372e0e841",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 29,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "207d7d06-1364-403e-ab73-6af1a693827c",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 7,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "a7ac36c3-c40a-4bfb-afd2-ab20a78e2c1f",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 85,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "d7106a63-7ba9-4888-8d9e-ecb194bc2a26",
+
+      "url": "http://qq.com",
+
+      "ip": "59.37.96.63",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 69,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "9a41d5b1-5e3f-455e-b013-063ef1883756",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 26,
+
+      "ttl": 128,
+
+      "receive": 0,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "9feafb5d-0e97-4767-a183-4d42baa7ecb9",
+
+      "url": "http://qq.com",
+
+      "ip": "111.161.64.40",
+
+      "location": "中国天津天津联通",
+
+      "delay": 68,
+
+      "ttl": 49,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "4f767d4a-5202-460b-8792-02c5a576b63a",
+
+      "url": "http://qq.com",
+
+      "ip": "180.163.26.39",
+
+      "location": "中国上海上海电信",
+
+      "delay": 73,
+
+      "ttl": 45,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    },
+
+    {
+
+      "token": "1ec7b4be-58a7-456b-bc77-dc00ff4d2cf2",
+
+      "guid": "ec0523e6-f1bc-4773-81a2-e447a895b0f7",
+
+      "url": "http://qq.com",
+
+      "ip": "58.60.9.21",
+
+      "location": "中国广东深圳电信",
+
+      "delay": 52,
+
+      "ttl": 51,
+
+      "receive": 32,
+
+      "send": 4,
+
+      "state": true,
+
+      "isTimeOut": false
+
+    }
+
+  ],
+
+  "message": "",
+
+  "error": []
+
+}
